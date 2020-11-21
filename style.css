@@ -137,6 +137,11 @@ h2 {
     align-items: center;
     flex-direction: row;
   }
+
+  .green {
+    color: #038c3e;
+  }
+  
   
   
   footer ul {
@@ -179,7 +184,7 @@ h2 {
   }
 
   .about p {
-    width: 25%;
+    width: 40%;
     padding: 20px;
     line-height: 1.5;
   }
@@ -195,6 +200,10 @@ h2 {
   .services div {
     margin: 30px;
     padding: 20px;
+  }
+
+  .services p {
+    line-height: 2;
   }
 
   .portfolio-container {

@@ -72,9 +72,14 @@ nav li a {
 
 
 #homehero {
-    background-image: url(./images/hero.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(./images/hero.jpg);
     height: 700px;
     text-align: center;
     margin: 0 auto 4em;
@@ -83,6 +88,11 @@ nav li a {
     border-radius: 5px;
     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
 }
+
+#homehero h1 {
+ color: #FFFFFF;
+}
+
 
 h1 {
     color: #000000;
@@ -109,7 +119,7 @@ h2 {
 
   .card {
     padding: 1rem;
-    background-color: #d9c9ba;
+    background-color:#d9c9ba;
     border: 1px solid black;
     border-radius: 15px;
     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.15);
@@ -184,13 +194,14 @@ h2 {
   }
 
   .about p {
-    width: 40%;
-    padding: 20px;
+    max-width: 350px;
+    padding: 10px;
     line-height: 1.5;
   }
 
   .services p {
     color: #000000;
+    margin-bottom: 1.5em;
   }
 
   .services h3 {
@@ -202,14 +213,10 @@ h2 {
     padding: 20px;
   }
 
-  .services p {
-    line-height: 2;
-  }
-
   .portfolio-container {
     margin: 20px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
   }
 
@@ -297,15 +304,15 @@ footer {
 }
 footer p {
   align-self: center;
+  max-width: 100%;
 }
 .about div {
   flex-direction: column-reverse;
 }
 
 .portfolio-container {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 80%;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 20px;
 }
 }
